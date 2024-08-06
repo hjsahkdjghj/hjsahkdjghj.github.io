@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Termos de Serviço" />
+    <title>Premium - © Hym Bot</title>
+    <style>
+        body {
+            background: #7b7b8f;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1, header h2 {
+            margin: 0;
+        }
+
+        .terms {
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+
+        .snowflake, .snowflake-img {
+            position: fixed;
+            top: 100%;
+            pointer-events: none;
+            z-index: 1000;
+            animation: snowflakes-fall 10s linear infinite, snowflakes-shake 3s ease-in-out infinite;
+        }
+                .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #7b7b8f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #7b7b8f;
+            color: #fff;
+        }
+		
+        @keyframes snowflakes-fall {
+            0% { top: 100%; }
+            100% { top: -10%; }
+        }
+
+        @keyframes snowflakes-shake {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(80px); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Plano Premium</h1>
+        <h2>© Hym Bot</h2>
+    </header>
+    <div class="terms">
+        <h3>Atenção!!!</h3>
+        <p>Bem-vindo ao Plano Premium do Hym Bot, Ao adquirir você recebera os seguintes beneficios:</p>
+
+        <h3>1. Uso dos Serviços</h3>
+        <p>Comando para resgatar 35k de Moedas de Prata a cada 24h</p>
+		<p>Uma pagina com seu perfil no site do Hym Bot</p>
+		<p>Você pode ver um exemplo do perfil em "hymbio.xyz/hym"</p>
+		<p>em breve mais novidades...</p>
+        <h3>2. Comportamento do Usuário</h3>
+        <p>Você é responsável pelo que você faz, caso você quebre alguma regra será banido pois o premium não te da imunidade.</p>
+
+        <h3>3. Modificações no plano</h3>
+        <p>O Hym Bot pode modificar o Plano Premium a qualquer momento.</p>
+		<p>Recomendamos que você revise regularmente para evitar frustrações.</p>
+
+        <h3>4. Contato</h3>
+        <p>Se você tiver alguma dúvida sobre o Plano Premium, entre em contato conosco através de nosso discord.</p>
+		
+        <a href="https://hymbio.xyz" class="back-button">Voltar para a página principal</a>
+    </div>
+</body>
+</html>
+

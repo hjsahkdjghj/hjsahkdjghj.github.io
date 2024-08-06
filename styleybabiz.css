@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c0c0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-container {
+    background-color: #ffb5df;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.profile-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-box {
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -40px; /* Ajuste a posição da imagem do perfil para sobrepor o banner */
+    position: relative;
+    z-index: 1;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #000; /* Borda branca para separar do banner */
+}
+
+.badge-container {
+    display: flex;
+    gap: 6px;
+    margin-top: -20px; /* Ajuste para descer as badges */
+}
+
+.badge {
+    width: 18px;
+    height: 18px;
+}
+
+.profile-info {
+    margin-top: 20px;
+}
+
+.username {
+    margin: 0;
+    font-size: 24px;
+    color: #000;
+}
+
+.userhandle {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #000;
+}
+
+.profile-link a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.profile-link a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #000;
+    margin: 20px 0;
+}
+
+.section-title {
+    font-size: 16px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.about,
+.member-since,
+.note {
+    font-size: 14px;
+    color: #000;
+    margin: 5px 0;
+}
+
+
+
+

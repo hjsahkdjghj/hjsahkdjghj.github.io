@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Termos de Serviço" />
+    <title>Termos de Serviço - © Hym Bot</title>
+    <style>
+        body {
+            background: #7b7b8f;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1, header h2 {
+            margin: 0;
+        }
+
+        .terms {
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+
+        .snowflake, .snowflake-img {
+            position: fixed;
+            top: 100%;
+            pointer-events: none;
+            z-index: 1000;
+            animation: snowflakes-fall 10s linear infinite, snowflakes-shake 3s ease-in-out infinite;
+        }
+                .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #7b7b8f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #7b7b8f;
+            color: #fff;
+        }
+		
+        @keyframes snowflakes-fall {
+            0% { top: 100%; }
+            100% { top: -10%; }
+        }
+
+        @keyframes snowflakes-shake {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(80px); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Termos de Serviço</h1>
+        <h2>© Hym Bot</h2>
+    </header>
+    <div class="terms">
+        <h3>Atenção!!!</h3>
+        <p>Bem-vindo aos termos de serviço do Hym Bot, Ao utilizar nossos serviços você concorda com os seguintes termos:</p>
+
+        <h3>1. Uso dos Serviços</h3>
+        <p>Não coloque o bot em varios servidores criados por você porque será removido e você será adicionado na blacklist do bot.</p>
+		<p>Não tente fazer spam usando nossos comandos.</p>
+		<p>O Hym Bot poderá coletar as seguintes informações suas: Avatar, Banner, Servidores, Mensagens no servidor, Mídias, apenas para uso próprio sem distribuição para terceiros.</p>
+		<p>Proibido utilizar varias contas para pegar os magic coins se for pego ou denunciado vai entrar na blacklist do bot. </p>
+		<p>Caso você encontre um bug ou falha em nossos scripts, reporte imediatamente a equipe de suporte no servidor do bot para evitar danos ao seu servidor. </p>
+        <h3>2. Conteúdo do Usuário</h3>
+        <p>Você é responsável pelo conteúdo que compartilha, nois não iremos se responsabilizar a menos que quebre os termos.</p>
+
+        <h3>3. Segurança</h3>
+        <p>Caso veja algum usúario quebrando as regras denúncie imediatamente no discord.</p>
+
+        <h3>4. Modificações nos Termos</h3>
+        <p>O Hym Bot pode modificar os termos a qualquer momento.</p>
+		<p>Recomendamos que você revise regularmente para evitar frustrações.</p>
+
+        <h3>5. Contato</h3>
+        <p>Se você tiver alguma dúvida sobre estes termos, entre em contato conosco através de nosso discord.</p>
+		
+        <a href="https://hymbio.xyz" class="back-button">Voltar para a página principal</a>
+    </div>
+</body>
+</html>
+

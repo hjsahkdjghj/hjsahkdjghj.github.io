@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil DC</title>
+    <link rel="stylesheet" href="styleybabiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .gradient-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(270deg, #ffcefe, #ffabfe, #fa8df8, #ff46fc);
+            background-size: 800% 800%;
+            animation: gradientAnimation 20s ease infinite;
+            z-index: -1; /* Mantém o efeito no fundo */
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .rich-presence {
+            background-color: rgba(0, 0, 0, 0.7); /* Transparente para ver o gradiente atrás */
+            border-radius: 8px;
+            color: #000;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .rich-presence img {
+            vertical-align: middle;
+            width: 80px; /* Defina o tamanho desejado */
+            height: 80px; /* Defina o tamanho desejado */
+            border-radius: 15px; /* Ajuste o valor conforme desejado para as bordas arredondadas */
+        }
+        .rich-presence .details {
+            display: flex;
+            align-items: center;
+        }
+        .rich-presence .details img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        .rich-presence .details .text {
+            font-size: 16px;
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+        }
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+        }
+        .status-icon {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #23a55a; /* Cor do status online, verde por padrão */
+            border: 2px solid #fff; /* Borda branca ao redor do ícone */
+        }
+        .badge-container {
+            display: flex;
+            gap: 5px;
+        }
+        .badge {
+            width: 20px;
+            height: 20px;
+        }
+        .buttons-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #7289DA; /* Cor de fundo similar ao Discord */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .button i {
+            margin-right: 8px; /* Espaço entre o ícone e o texto */
+            font-size: 20px; /* Tamanho do ícone */
+        }
+        .button:hover {
+            background-color: #5b6dcd; /* Cor de fundo ao passar o mouse */
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        }
+        .button.instagram {
+            background-color: #E4405F; /* Cor de fundo do Instagram */
+        }
+        .button.discord {
+            background-color: #7289DA; /* Cor de fundo do Discord */
+        }
+        .button.youtube {
+            background-color: #FF0000; /* Cor de fundo do YouTube */
+        }
+        .button.spotify {
+            background-color: #000000; /* Cor de fundo do Spotify */
+        }
+        .button.tiktok {
+            background-color: #000000; /* Cor de fundo do TikTok */
+        }
+        .button.github {
+            background-color: #333333; /* Cor de fundo do GitHub */
+        }
+        .button.steam {
+            background-color: #0A7BFF; /* Cor de fundo do Steam */
+        }
+        .username-container {
+            display: flex;
+            align-items: center;
+            gap: 5px; /* Espaço entre o nome de usuário e o ícone de verificado */
+        }
+        .verified-icon {
+            width: 20px; /* Defina o tamanho desejado para o ícone de verificado */
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-background"></div>
+    <section class="profile-container">
+        <div class="profile-banner">
+            <img src="https://imgur.com/qqMjcJ9.png" alt="Banner Image">
+        </div>
+        <div class="profile-box">
+            <div class="profile-header">
+                <div style="position: relative;">
+                    <img class="profile-picture" src="https://imgur.com/k88ooce.png" alt="Profile Picture">
+                    <div class="status-icon"></div>
+                </div>
+                <div class="badge-container">
+                    <img class="badge" src="https://cdn.discordapp.com/emojis/947493511027105852.webp?size=96&quality=lossless" alt="Badge 1">
+                    <img class="badge" src="https://imgur.com/kpZhFdP.png" alt="Badge 2">
+                    <img class="badge" src="https://imgur.com/KV3AblW.png" alt="Badge 3">
+                    <img class="badge" src="https://imgur.com/nGPzSxw.png" alt="Badge 4">
+                    <img class="badge" src="https://cdn.discordapp.com/emojis/971554269868220456.webp?size=100&quality=lossless" alt="Badge 5">
+                    <img class="badge" src="https://cdn.discordapp.com/emojis/1232819009766948976.webp?size=96&quality=lossless" alt="Badge 6">
+                </div>
+            </div>
+            <div class="profile-info">
+                <h2 class="username">Babi</h2>
+                <h3 class="userhandle username-container">
+                    <span>ybabiz</span>
+                    <img class="verified-icon" src="https://imgur.com/jWKSKKM.png" alt="Verificado">
+                    <img class="verified-icon" src="https://imgur.com/28rNvfJ.png" alt="Verificado">
+                    <img class="verified-icon" src="https://imgur.com/srIxWFD.png" alt="Verificado">
+                </h3>
+                <p class="profile-link"><a href="https://hymbio.xyz/ybabiz">https://hymbio.xyz/ybabiz</a></p>
+                <hr>
+                <h3 class="section-title">SOBRE MIM</h3>
+                <p class="about">˚　 ⋆⁺₊✦⁺₊ 　 ˚　.˚  .　 ☁.　　. 　 ˚　⁺⋆₊　.˚  .　. ✦⋆⁺₊  　 ˚　. ☁ ˚　.˚　 ✩₊˚.   ☾      ⋆      ⁺₊✧  　　˚　⁺₊ . 　 ˚　.　　⁺₊✦₊　　 ☁  　˚　</p>
+                <h3 class="section-title">MEMBRO DO DISCORD DESDE</h3>
+                <p class="member-since">19 de nov. de 2018</p>
+                <h3 class="section-title">NOTA</h3>
+                <p class="note">Clique aqui para adicionar uma nota</p>
+            </div>
+            <div class="rich-presence">
+                <h3>Assistindo</h3>
+                <div class="details">
+                    <img src="https://imgur.com/6WipdgZ.png" alt="Profile Picture">
+                    <div class="text">
+                        <strong>Crunchyroll®</strong><br>
+                        <strong>In Menu</strong><br>
+                        <small id="elapsed-time">00:30:10</small>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <a class="button discord" href="https://discord.com/users/697083411709558855">
+                    <i class="fab fa-discord"></i> Discord
+                </a>
+                <a class="button spotify" href="https://www.tiktok.com/@ferreira_barbi">
+                    <i class="fab fa-tiktok"></i> Tiktok
+                </a>
+            </div>
+        </div>
+    </section>
+    <script>
+        function updateTime() {
+            const startTime = new Date();
+            const elapsedTimeElement = document.getElementById('elapsed-time');
+
+            function formatTime(seconds) {
+                const hours = String(Math.floor(seconds / 3600)).padStart(2, '03');
+                const minutes = String(Math.floor((seconds % 3600) / 60)).padStart(2, '38');
+                const secs = String(seconds % 60).padStart(2, '10');
+                return `${hours}:${minutes}:${secs}`;
+            }
+
+            function updateElapsedTime() {
+                const now = new Date();
+                const elapsedSeconds = Math.floor((now - startTime) / 1000);
+                elapsedTimeElement.textContent = formatTime(elapsedSeconds);
+            }
+
+            setInterval(updateElapsedTime, 1000); // Atualiza o tempo a cada segundo
+        }
+
+        document.addEventListener('DOMContentLoaded', updateTime);
+    </script>
+</body>
+</html>
+
