@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenvolvedores - hymbio</title>
+  <style>
+    /* Estilo geral */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff; /* Fundo branco */
+      color: #ff0000; /* Texto vermelho */
+      text-align: center;
+    }
+
+    /* Estilo do cabeçalho */
+    header {
+      background-color: #ff0000; /* Cabeçalho vermelho */
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff; /* Texto branco */
+      position: relative;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 60px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    /* Estilo das seções dos desenvolvedores */
+    .dev-sections {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin: 40px auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    .dev-card {
+      background-color: #ffffff; /* Fundo branco */
+      border-radius: 15px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s, box-shadow 0.3s;
+      color: #ff0000; /* Texto vermelho */
+    }
+
+    .dev-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+    }
+
+    .dev-card img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 4px solid #ff0000; /* Bordas vermelhas */
+    }
+
+    .dev-card h2 {
+      color: #ff0000; /* Título vermelho */
+      font-size: 26px;
+      margin: 10px 0;
+    }
+
+    .dev-card p {
+      margin: 10px 0;
+    }
+
+    .dev-card .role {
+      font-size: 18px;
+      color: #555555;
+      margin-bottom: 15px;
+    }
+
+    .dev-card .description {
+      font-size: 16px;
+      line-height: 1.4;
+      color: #000000; /* Descrição preta */
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #ff0000; /* Rodapé vermelho */
+      padding: 20px 0;
+      color: #ffffff; /* Texto branco */
+      font-size: 14px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ffffff; /* Links brancos */
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho com título -->
+  <header>
+    <h1>Devs</h1>
+  </header>
+
+  <!-- Seções dos desenvolvedores -->
+  <div class="dev-sections">
+    <!-- Desenvolvedor 1 -->
+    <div class="dev-card">
+      <img src="https://imgur.com/oTnjqve.gif" alt="Avatar do Desenvolvedor 1">
+      <h2>@hymbio</h2>
+      <p class="role">Desenvolvedor</p>
+      <p class="description">Responsável pela arquitetura e principais funcionalidades do bot.</p>
+    </div>
+
+    <!-- Desenvolvedor 2 -->
+    <div class="dev-card">
+      <img src="https://imgur.com/uvJzPMv.png" alt="Avatar do Desenvolvedor 2">
+      <h2>@aks_men</h2>
+      <p class="role">Desenvolvedor</p>
+      <p class="description">Responsável por testar os comandos em busca de bugs.</p>
+    </div>
+
+    <!-- Desenvolvedor 3 -->
+    <div class="dev-card">
+      <img src="https://imgur.com/s2tew24.png" alt="Avatar do Desenvolvedor 3">
+      <h2>@rapositosa</h2>
+      <p class="role">Desenvolvedora</p>
+      <p class="description">Apoiadora responsável por resolver os bugs.</p>
+    </div>
+
+    <!-- Desenvolvedor 4 -->
+    <div class="dev-card">
+      <img src="https://imgur.com/MKVsbZk.png" alt="Avatar do Desenvolvedor 4">
+      <h2>@anny</h2>
+      <p class="role">Patrocinadora</p>
+      <p class="description">Patrocinou o bot na parte de custos.</p>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 hymbio. Todos os direitos reservados.</p>
+    <p><a href="https://hymbio.xyz/termos">Termos</a> | <a href="https://hymbio.xyz/politica">Política de Privacidade</a></p>
+  </footer>
+
+</body>
+</html>
+

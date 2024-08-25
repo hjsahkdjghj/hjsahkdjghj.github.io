@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hymbio - Página Inicial</title>
+  <style>
+    /* Reset geral */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Estilo geral */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Estilo do cabeçalho */
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://imgur.com/rcuz5Ur.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      position: relative;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+    }
+
+    /* Botões */
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 50px;
+      border: 2px solid #ff0000;
+      color: #ff0000;
+      background-color: transparent;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #ff0000;
+      color: #fff;
+    }
+
+    .buttons a.primary {
+      background-color: #ff0000;
+      color: #fff;
+    }
+
+    /* Menu de navegação */
+    .nav-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-button {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .nav-button:hover {
+      background: #ff0000;
+      color: #fff;
+    }
+
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 8px;
+      overflow: hidden;
+      width: 200px;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #fff;
+      padding: 12px 20px;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .nav-menu a:hover {
+      background: #ff0000;
+    }
+
+    .nav-menu.show {
+      display: flex;
+    }
+
+    .nav-menu .separator {
+      border-top: 1px solid #fff;
+      margin: 8px 0;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #640002; /* Vermelho escuro */
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      width: 100%;
+      position: relative;
+      bottom: 0;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Seção de imagens */
+    .image-section {
+      background-color: #fff;
+      padding: 40px 20px;
+      border-top: 5px solid #ff0000; /* Borda superior vermelha */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .image-container {
+      max-width: 300px;
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .description {
+      margin-top: 10px;
+      color: #333;
+      font-size: 16px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .buttons a {
+        padding: 10px 20px;
+        font-size: 0.875rem;
+      }
+
+      .nav-button {
+        font-size: 0.875rem;
+      }
+
+      .nav-menu a {
+        font-size: 0.875rem;
+        padding: 10px;
+      }
+
+      .image-section .image-container {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho com imagem de fundo e conteúdo principal -->
+  <header>
+    <h1>hymbio 1.0</h1>
+    <p>Conheça a versão 100% gratuita e adicione-o agora em seu servidor.</p>
+    <div class="buttons">
+      <a href="https://discord.com/oauth2/authorize?client_id=984900920666124348" class="primary">Me Adicione</a>
+      <a href="https://discord.gg/QaS2M6Tmwy">Suporte</a>
+    </div>
+  </header>
+
+  <!-- Menu de navegação -->
+  <div class="nav-container">
+    <button class="nav-button" id="menuButton">Menu</button>
+    <div class="nav-menu" id="navMenu">
+      <a href="https://hymbio.xyz/premium">Premium</a>
+      <a href="https://hymbio.xyz/comandos">Comandos</a>
+      <a href="https://hymbio.xyz/termos">Termos</a>
+      <a href="https://hymbio.xyz/politica">Política de privacidade</a>
+      <a href="https://hymbio.xyz/webhooks">Criar webhooks</a>
+      <a href="https://hymbio.xyz/devs">Developers</a>
+      <a href="https://hymbio.xyz/blog">Blog</a> <!-- Novo botão para o blog -->
+      <div class="separator"></div>
+      <a href="https://hymbio.xyz/" class="primary">Logar</a>
+    </div>
+  </div>
+
+  <!-- Seção de imagens com efeitos vermelhos -->
+  <section class="image-section">
+    <div class="image-container">
+      <img src="https://imgur.com/LMo5lk8.png" alt="Descrição da imagem 1">
+      <div class="description">Sistemas de aposta entre os membros do seu servidor.</div>
+    </div>
+    <div class="image-container">
+      <img src="https://imgur.com/CM1Ae4S.png" alt="Descrição da imagem 2">
+      <div class="description">Sistema de economia completo.</div>
+    </div>
+    <div class="image-container">
+      <img src="https://imgur.com/AUGPLqh.png" alt="Descrição da imagem 3">
+      <div class="description">Sistema de logs de entrada e saida do servidor.</div>
+    </div>
+    <div class="image-container">
+      <img src="https://imgur.com/vIhGK5S.png" alt="Descrição da imagem 4">
+      <div class="description">Um painel de moderação avançado com logs para o seu servidor e muito mais!</div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 hymbio. Todos os direitos reservados.</p>
+    <p><a href="https://hymbio.xyz/termos">Termos</a> | <a href="https://hymbio.xyz/politica">Política de privacidade</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('menuButton').addEventListener('click', function() {
+      const navMenu = document.getElementById('navMenu');
+      navMenu.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+

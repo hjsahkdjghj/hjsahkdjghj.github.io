@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planos Premium - hymbio</title>
+  <style>
+    /* Estilo geral */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff; /* Fundo branco */
+      color: #ff0000; /* Texto vermelho */
+      text-align: center;
+      min-height: 100vh; /* Garante que o corpo ocupe a altura total da tela */
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Estilo do cabeçalho */
+    header {
+      background-color: #ff0000; /* Fundo vermelho */
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff; /* Texto branco */
+      position: relative;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 50px;
+      font-weight: bold;
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    /* Estilo da imagem no topo dos cartões */
+    .premium-image {
+      width: 120px; /* Largura da imagem */
+      margin: 20px auto;
+    }
+
+    /* Estilo das seções Premium */
+    .premium-sections {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 40px auto;
+      max-width: 1000px;
+      flex-grow: 1; /* Faz com que o conteúdo principal cresça e empurre o rodapé para baixo */
+    }
+
+    .premium-card {
+      background-color: #ff0000; /* Fundo vermelho */
+      border-radius: 12px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s, box-shadow 0.3s;
+      color: #ffffff; /* Texto branco */
+      overflow: hidden;
+    }
+
+    .premium-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    .premium-card .card-image {
+      width: 100px; /* Largura da imagem */
+      margin: 0 auto 20px; /* Centraliza a imagem e adiciona margem inferior */
+    }
+
+    .premium-card h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .premium-card p {
+      margin: 10px 0;
+    }
+
+    .premium-card .price {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .premium-card ul {
+      list-style: none;
+      padding: 0;
+      font-size: 16px;
+    }
+
+    .premium-card ul li {
+      margin: 10px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .premium-card ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #ffffff; /* Marcador branco */
+    }
+
+    /* Estilo do botão de compra */
+    .buy-button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #ffffff;
+      background-color: #cc0000; /* Fundo vermelho escuro */
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .buy-button:hover {
+      background-color: #ff4d4d; /* Fundo vermelho claro */
+      transform: scale(1.05);
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #ff0000; /* Fundo vermelho */
+      padding: 20px 0;
+      color: #ffffff; /* Texto branco */
+      font-size: 14px;
+      text-align: center;
+      margin-top: auto; /* Faz com que o rodapé vá para o final do layout flexível */
+    }
+
+    footer a {
+      color: #ffffff; /* Links brancos no rodapé */
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      .premium-card {
+        width: 90%;
+        max-width: 400px;
+      }
+
+      .premium-card h2 {
+        font-size: 24px;
+      }
+
+      .premium-card p.price {
+        font-size: 22px;
+      }
+
+      .premium-card ul li {
+        font-size: 16px;
+        padding-left: 20px;
+      }
+
+      footer {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho com título -->
+  <header>
+    <h1>Premium</h1>
+  </header>
+
+  <!-- Seções dos planos Premium -->
+  <div class="premium-sections">
+    <!-- Premium Bronze -->
+    <div class="premium-card">
+      <img src="https://imgur.com/paAZs1A.png" alt="Imagem Premium Bronze" class="card-image">
+      <h2>Premium Bronze</h2>
+      <p class="price">R$ 00,00 / mês</p>
+      <ul>
+        <li>Em breve</li>
+        <li>Em breve</li>
+        <li>Em breve</li>
+		<li>Em breve</li>
+      </ul>
+      <a href="https://discord.gg/hymbio" class="buy-button">Comprar</a>
+    </div>
+
+    <!-- Premium Prata -->
+    <div class="premium-card">
+      <img src="https://imgur.com/paAZs1A.png" alt="Imagem Premium Prata" class="card-image">
+      <h2>Premium Prata</h2>
+      <p class="price">R$ 00,00 / mês</p>
+      <ul>
+        <li>Em breve</li>
+        <li>Em breve</li>
+        <li>Em breve</li>
+		<li>Em breve</li>
+      </ul>
+      <a href="https://discord.gg/hymbio" class="buy-button">Comprar</a>
+    </div>
+
+    <!-- Premium Booster -->
+    <div class="premium-card">
+      <img src="https://imgur.com/paAZs1A.png" alt="Imagem Premium Booster" class="card-image">
+      <h2>Premium Booster</h2>
+      <p class="price">R$ 00,00 / mês</p>
+      <ul>
+        <li>Em breve</li>
+        <li>Em breve</li>
+        <li>Em breve</li>
+        <li>Em breve</li>
+      </ul>
+      <a href="https://discord.gg/hymbio" class="buy-button">Comprar</a>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Seu Bot. Todos os direitos reservados.</p>
+    <p><a href="https://hymbio.xyz/termos">Termos</a> | <a href="https://hymbio.xyz/politica">Política de Privacidade</a></p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

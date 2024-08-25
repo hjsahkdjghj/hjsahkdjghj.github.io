@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hymbio criador de embeds</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #ffffff; /* Fundo branco */
+    }
+
+    .container {
+      background: #f5f5f5; /* Fundo da caixa branco claro */
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 500px; /* Largura máxima para centralizar */
+      color: #333; /* Texto escuro */
+      margin: 20px auto; /* Adicionado margem automática para centralizar */
+      flex: 1; /* Faz a caixa ocupar o espaço restante da página */
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #ff0000; /* Cor vermelha */
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 8px;
+      border: 1px solid #ddd; /* Borda cinza clara */
+      border-radius: 4px;
+      background: #ffffff; /* Fundo dos campos branco */
+      color: #333; /* Texto dos campos escuro */
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background: #ff0000; /* Cor do botão vermelho */
+      color: #ffffff; /* Texto do botão branco */
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #cc0000; /* Cor do botão ao passar o mouse */
+    }
+
+    .message {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .message.success {
+      color: #43b581; /* Verde para sucesso */
+    }
+
+    .message.error {
+      color: #f04747; /* Vermelho para erro */
+    }
+
+    footer {
+      background-color: #ff0000; /* Fundo vermelho */
+      color: #ffffff; /* Texto branco */
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+      margin-top: auto; /* Faz o rodapé se mover para o final */
+    }
+
+    footer a {
+      color: #ffffff; /* Links brancos no rodapé */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Criador de webhook/embed hymbio</h1>
+    <form id="webhookForm">
+      <label for="webhookUrl">URL do Webhook:</label>
+      <input type="text" id="webhookUrl" placeholder="Cole a URL do Webhook aqui" required>
+
+      <label for="username">Nome de Usuário:</label>
+      <input type="text" id="username" placeholder="Digite o nome de usuário">
+
+      <label for="profileImage">URL da Imagem de Perfil:</label>
+      <input type="text" id="profileImage" placeholder="Cole a URL da imagem de perfil aqui">
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" rows="3" placeholder="Digite sua mensagem aqui"></textarea>
+
+      <label for="embedTitle">Título do Embed:</label>
+      <input type="text" id="embedTitle" placeholder="Título do embed">
+
+      <label for="embedDescription">Descrição do Embed:</label>
+      <textarea id="embedDescription" rows="3" placeholder="Descrição do embed"></textarea>
+
+      <label for="embedImage">URL da Imagem do Embed:</label>
+      <input type="text" id="embedImage" placeholder="Cole a URL da imagem do embed">
+
+      <label for="embedThumbnail">URL da Thumbnail do Embed:</label>
+      <input type="text" id="embedThumbnail" placeholder="Cole a URL da thumbnail do embed">
+
+      <label for="embedColor">Cor do Embed (hexadecimal, ex: #ff0000):</label>
+      <input type="text" id="embedColor" placeholder="#ff0000">
+
+      <label for="embedFooter">Rodapé do Embed:</label>
+      <input type="text" id="embedFooter" placeholder="2024 hymbio. Todos os direitos reservados.">
+
+      <button type="submit">Enviar</button>
+      <div class="message" id="messageBox"></div>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 hymbio. Todos os direitos reservados. <a href="https://hymbio.xyz">pagina inicial</a></p>
+  </footer>
+ <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
