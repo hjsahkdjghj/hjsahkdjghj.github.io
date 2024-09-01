@@ -1,299 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil DC</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>@hymbio | Links</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://imgur.com/vN52gES.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS do tema principal -->
+    <link rel="stylesheet" href="hym.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .profile-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .profile-banner img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            object-fit: cover;
-        }
-        .profile-box {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-top: -50px;
-            position: relative;
-        }
-        .profile-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            position: relative;
-        }
-        .profile-picture {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            position: relative;
-        }
-        .status-icon {
-            position: absolute;
-            bottom: 5px;
-            right: 5px;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            background-color: #23a55a;
-            border: 2px solid #fff;
-        }
-        .badge-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            position: absolute;
-            top: 10px;
-            right: -10px; /* Ajuste para posicionar as insígnias mais à direita */
-        }
-        .badge {
-            width: 25px;
-            height: 25px;
-        }
-        .profile-info {
-            margin-top: 20px;
-        }
-        .username {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .userhandle {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 18px;
-            margin: 10px 0;
-        }
-        .verified-icon {
-            width: 20px;
-            height: 20px;
-        }
-        .profile-link a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        .profile-link a:hover {
-            text-decoration: underline;
-        }
-        .section-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin: 20px 0 10px;
-        }
-        .about, .member-since, .note {
-            margin: 0;
-        }
-        .rich-presence {
-            background-color: #1DB954; /* Spotify green */
-            border-radius: 8px;
-            color: #fff;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        .rich-presence img {
-            vertical-align: middle;
-            width: 80px;
-            height: 80px;
-            border-radius: 15px;
-        }
-        .rich-presence .details {
-            display: flex;
-            align-items: center;
-        }
-        .rich-presence .details img {
-            width: 80px;
-            height: 80px;
-            margin-right: 15px;
-        }
-        .rich-presence .details .text {
-            font-size: 16px;
-        }
-        .buttons-container {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        .button {
-            display: flex;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #7289DA;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-        .button i {
-            margin-right: 8px;
-            font-size: 20px;
-        }
-        .button:hover {
-            background-color: #5b6dcd;
-            transform: scale(1.05);
-        }
-        .button.instagram {
-            background-color: #E4405F;
-        }
-        .button.discord {
-            background-color: #7289DA;
-        }
-        .button.youtube {
-            background-color: #FF0000;
-        }
-        .button.spotify {
-            background-color: #1DB954;
-        }
-        .button.tiktok {
-            background-color: #000000;
-        }
-        .button.github {
-            background-color: #333333;
-        }
-        .button.steam {
-            background-color: #0A7BFF;
-        }
-        .play-button {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .play-button button {
-            background-color: #1DB954;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .play-button button:hover {
-            background-color: #1ED760;
-        }
+      /* Adicione estilos CSS para o botão de link com a casinha */
+      .home-button {
+        display: block;
+        margin: 20px auto;
+        width: 50px; /* Ajuste conforme necessário */
+        height: 50px; /* Ajuste conforme necessário */
+      }
+
+      .home-button img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; /* Torna a imagem circular */
+        transition: transform 0.3s;
+      }
+
+      .home-button img:hover {
+        transform: scale(1.1); /* Aumenta o tamanho da imagem ao passar o mouse */
+      }
     </style>
-</head>
-<body>
-    <section class="profile-container">
-        <div class="profile-banner">
-            <img src="https://imgur.com/sNrxLAn.gif" alt="Banner Image">
-        </div>
-        <div class="profile-box">
-            <div class="profile-header">
-                <div style="position: relative;">
-                    <img class="profile-picture" src="https://imgur.com/4kdoYLX.png" alt="Profile Picture">
-                    <div class="status-icon"></div>
-                </div>
-                <div class="badge-container">
-                    <img class="badge" src="https://cdn.discordapp.com/emojis/947493511027105852.webp?size=96&quality=lossless" alt="Badge 1">
-                    <img class="badge" src="https://imgur.com/kpZhFdP.png" alt="Badge 2">
-                    <img class="badge" src="https://imgur.com/KV3AblW.png" alt="Badge 3">
-                    <img class="badge" src="https://imgur.com/nGPzSxw.png" alt="Badge 4">
-                    <img class="badge" src="https://cdn.discordapp.com/emojis/971554269868220456.webp?size=100&quality=lossless" alt="Badge 5">
-                    <img class="badge" src="https://cdn.discordapp.com/emojis/1232819009766948976.webp?size=96&quality=lossless" alt="Badge 6">
-                </div>
-            </div>
-            <div class="profile-info">
-                <h2 class="username">MTS</h2>
-                <h3 class="userhandle">
-                    <span>hymbio</span>
-                    <img class="verified-icon" src="https://imgur.com/jWKSKKM.png" alt="Verificado">
-                </h3>
-                <p class="profile-link"><a href="https://hymbio.xyz/">https://hymbio.xyz/</a></p>
-                <hr>
-                <h3 class="section-title">SOBRE MIM</h3>
-                <p class="about">Developer hymbio</p>
-                <h3 class="section-title">MEMBRO DO DISCORD DESDE</h3>
-                <p class="member-since">19 de nov. de 2018</p>
-                <h3 class="section-title">NOTA</h3>
-                <p class="note">Clique aqui para adicionar uma nota</p>
-            </div>
-            <div class="rich-presence">
-                <h3>Ouvindo no Spotify</h3>
-                <div class="details">
-                    <img src="https://imgur.com/RgvSQ8P.png" alt="Spotify Album Art"> <!-- Troque com a imagem do álbum -->
-                    <div class="text">
-                        <strong>Innerbloom (Radio Edit)</strong><br>
-                        <strong>RÜFÜS DU SOL</strong><br>
-                        <small id="elapsed-time">10:30:10</small>
-                    </div>
-                </div>
-                <div class="play-button">
-                    <button id="play-button">Play</button>
-                </div>
-            </div>
-            <div class="buttons-container">
-                <a class="button discord" href="https://discord.gg/hymbio">
-                    <i class="fab fa-discord"></i> Discord
-                </a>
-                <a class="button spotify" href="https://spotify.com">
-                    <i class="fab fa-spotify"></i> Spotify
-                </a>
-                <a class="button github" href="https://github.com/hymbio">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-        </div>
+  </head> 
+
+  <body>
+    <!-- Animação de fundo de pixel paralaxe -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
     </section>
-    <audio id="background-music" src="https://server1.mtabrasil.com.br/play?id=EYuhAk-lc4Y" preload="auto"></audio>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const audio = document.getElementById('background-music');
-            const playButton = document.getElementById('play-button');
+    <!-- Fim da animação de fundo de pixel paralaxe -->
 
-            function playMusic() {
-                audio.play().catch(error => {
-                    console.log('Erro ao tentar reproduzir a música:', error);
-                });
-            }
+    <a id="profilePicture" href="#popup">
+      <img src="https://imgur.com/s0HKgzt.png" alt="Profile Picture">
+    </a>
 
-            playButton.addEventListener('click', playMusic);
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="https://imgur.com/s0HKgzt.png" target="_blank">
+            <img src="https://imgur.com/s0HKgzt.png" alt="Profile Picture">
+          </a>
+        </div>
+        <div class="popup-quote">
+        ★ 𝓼𝓱𝓮 𝓶𝓪𝓴𝓮𝓼 𝓶𝓮 𝓱𝓪𝓹𝓹𝔂 ★
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
+    </div>
 
-            function updateTime() {
-                const startTime = new Date();
-                const elapsedTimeElement = document.getElementById('elapsed-time');
+    <div id="userName">
+      @hymbio <i class="fas fa-check-circle"></i>
+    </div>
+    
+    <!-- Adicionando uma frase abaixo do @heymts -->
+    <div id="userQuote">
+  ★ 𝓼𝓱𝓮 𝓶𝓪𝓴𝓮𝓼 𝓶𝓮 𝓱𝓪𝓹𝓹𝔂 ★
+    </div>
 
-                function formatTime(seconds) {
-                    const hours = String(Math.floor(seconds / 3600)).padStart(2, '0');
-                    const minutes = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
-                    const secs = String(seconds % 60).padStart(2, '0');
-                    return `${hours}:${minutes}:${secs}`;
-                }
+    <div id="links">
+      <a class="link" href="https://github.com/hymbio" target="_blank">
+     <i class="fab fa-github">&nbsp;</i>Github
+      </a>
+      <a class="link" href="https://discord.gg/BZqWDSaSCv" target="_blank">
+        <i class="fab fa-discord">&nbsp;</i>Discord
+      </a>
+      <a class="link" href="https://www.youtube.com/@hymbio" target="_blank">
+        <i class="fab fa-youtube">&nbsp;</i>Youtube
+      </a>
+	   <a class="link" href="https://open.spotify.com/user/31nrajjhr3iye7qxhcd7cfipqzry?si=50917eb0614a4917" target="_blank">
+        <i class="fab fa-spotify">&nbsp;</i>Spotify
+      </a>
+    </div>
 
-                function updateElapsedTime() {
-                    const now = new Date();
-                    const elapsedSeconds = Math.floor((now - startTime) / 1000);
-                    elapsedTimeElement.textContent = formatTime(elapsedSeconds);
-                }
+    <!-- Adicionando o botão de link com a imagem da casinha -->
+    <a class="home-button" href="https://hymbio.xyz/" target="_blank">
+      <img src="https://imgur.com/vN52gES.png" alt="Home">
+    </a>
 
-                setInterval(updateElapsedTime, 1000); // Atualiza o tempo a cada segundo
-            }
-
-            updateTime();
-        });
-    </script>
-</body>
+    <div id="hashtag">
+      Powered by: @hymbio
+    </div>
+  </body>
 </html>
-
-
-
-
