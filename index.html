@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="https://imgur.com/vN52gES.png" type="image/x-icon" />
+    <title>Hym Bio</title>
+    <style>
+        body {
+            background-color: #dfc8a0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+            color: #333;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 4em; /* Maior destaque no título */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.5em; /* Aumentar o texto descritivo */
+            margin: 20px 0 40px;
+            max-width: 800px; /* Largura do texto para centralização */
+        }
+
+        .discord-button {
+            display: inline-block;
+            padding: 15px 40px; /* Aumentar o padding */
+            font-size: 1.5em; /* Fonte maior no botão */
+            color: white;
+            text-decoration: none;
+            background-color: transparent; /* Botão transparente */
+            border: 2px solid white; /* Borda branca */
+            border-radius: 50px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .discord-button:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Fundo branco transparente ao passar o mouse */
+            transform: scale(1.05); /* Efeito de crescimento no hover */
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            padding: 0 20px;
+        }
+
+        /* Estilo da logo */
+        .logo {
+            width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Efeito de flocos subindo */
+        .flake {
+            position: absolute;
+            bottom: -20px;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: floatUp 8s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-150vh);
+                opacity: 0;
+            }
+        }
+
+        /* Estilos adicionais para os flocos */
+        .flake:nth-child(2) { left: 10%; animation-duration: 5s; }
+        .flake:nth-child(3) { left: 20%; animation-duration: 7s; animation-delay: 1s; }
+        .flake:nth-child(4) { left: 30%; animation-duration: 6s; animation-delay: 2s; }
+        .flake:nth-child(5) { left: 40%; animation-duration: 8s; animation-delay: 3s; }
+        .flake:nth-child(6) { left: 50%; animation-duration: 5s; animation-delay: 1s; }
+        .flake:nth-child(7) { left: 60%; animation-duration: 7s; animation-delay: 2s; }
+        .flake:nth-child(8) { left: 70%; animation-duration: 9s; animation-delay: 3s; }
+        .flake:nth-child(9) { left: 80%; animation-duration: 6s; animation-delay: 1s; }
+        .flake:nth-child(10) { left: 90%; animation-duration: 8s; animation-delay: 2s; }
+    </style>
+</head>
+<body>
+
+    <!-- Conteúdo centralizado -->
+    <div class="container">
+        <!-- Logo adicionada -->
+        <img src="https://imgur.com/vN52gES.png" alt="Logo Hym Bio" class="logo">
+        <h1>Hym Bio</h1>
+        <p>Nosso objetivo é fornecer uma plataforma eficiente e organizada para que criadores de conteúdo possam centralizar e compartilhar todos os seus links em um único lugar, facilitando o acesso e promovendo sua presença online de forma prática e elegante.</p>
+        <a href="https://discord.gg/hZq2V4KwBm" target="_blank" class="discord-button">Discord</a>
+    </div>
+
+    <!-- Adicionando mais flocos subindo -->
+    <div class="flake"></div>
+    <div class="flake"></div>
+    <div class="flake"></div>
+    <div class="flake"></div>
+    <div class="flake"></div>
+    <div class="flake"></div>
+    <div class="flake"></div>
+    <div class="flake"></div>
+    <div class="flake"></div>
+    <div class="flake"></div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@aks | Links</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://imgur.com/vN52gES.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS do tema principal -->
+    <link rel="stylesheet" href="styleaks.css">
+    <style>
+      /* Adicione estilos CSS para o botão de link com a casinha */
+      .home-button {
+        display: block;
+        margin: 20px auto;
+        width: 50px; /* Ajuste conforme necessário */
+        height: 50px; /* Ajuste conforme necessário */
+      }
+
+      .home-button img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; /* Torna a imagem circular */
+        transition: transform 0.3s;
+      }
+
+      .home-button img:hover {
+        transform: scale(1.1); /* Aumenta o tamanho da imagem ao passar o mouse */
+      }
+    </style>
+  </head> 
+
+  <body>
+    <!-- Animação de fundo de pixel paralaxe -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- Fim da animação de fundo de pixel paralaxe -->
+
+    <a id="profilePicture" href="#popup">
+      <img src="https://imgur.com/iKaE3jx.png" alt="Profile Picture">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="https://imgur.com/iKaE3jx.png" target="_blank">
+            <img src="https://imgur.com/iKaE3jx.png" alt="Profile Picture">
+          </a>
+        </div>
+        <div class="popup-quote">
+        É preciso saber tirar proveito de uma desgraça, e não deixar-se vencer por ela.
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
+    </div>
+
+    <div id="userName">
+      @aks <i class="fas fa-check-circle"></i>
+    </div>
+    
+    <!-- Adicionando uma frase abaixo do @heymts -->
+    <div id="userQuote">
+  É preciso saber tirar proveito de uma desgraça, e não deixar-se vencer por ela.
+    </div>
+
+    <div id="links">
+      <a class="link" href="https://steamcommunity.com/profiles/76561199030610997/" target="_blank">
+     <i class="fab fa-steam">&nbsp;</i>Steam
+      </a>
+      <a class="link" href="https://discord.com/users/682122582081798162" target="_blank">
+        <i class="fab fa-discord">&nbsp;</i>Discord
+      </a>
+      <a class="link" href="https://www.instagram.com/4ks_men/" target="_blank">
+        <i class="fab fa-instagram">&nbsp;</i>Instagram
+      </a>
+	   <a class="link" href="https://open.spotify.com/user/31nrajjhr3iye7qxhcd7cfipqzry?si=50917eb0614a4917" target="_blank">
+        <i class="fab fa-spotify">&nbsp;</i>Spotify
+      </a>
+    </div>
+
+    <!-- Adicionando o botão de link com a imagem da casinha -->
+    <a class="home-button" href="https://hymbio.xyz/" target="_blank">
+      <img src="https://imgur.com/vN52gES.png" alt="Home">
+    </a>
+
+    <div id="hashtag">
+      Powered by: @hymbio
+    </div>
+  </body>
+</html>
