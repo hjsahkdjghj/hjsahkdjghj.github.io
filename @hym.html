@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@hym | Links</title>
@@ -11,82 +11,145 @@
     <!-- CSS do tema principal -->
     <link rel="stylesheet" href="stylehym.css">
     <style>
-      /* Adicione estilos CSS para o botão de link com a casinha */
-      .home-button {
-        display: block;
-        margin: 20px auto;
-        width: 50px; /* Ajuste conforme necessário */
-        height: 50px; /* Ajuste conforme necessário */
-      }
+        /* Adicione estilos CSS para o botão de link com a casinha */
+        .home-button {
+            display: block;
+            margin: 20px auto;
+            width: 50px; /* Ajuste conforme necessário */
+            height: 50px; /* Ajuste conforme necessário */
+        }
 
-      .home-button img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%; /* Torna a imagem circular */
-        transition: transform 0.3s;
-      }
+        .home-button img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; /* Torna a imagem circular */
+            transition: transform 0.3s;
+        }
 
-      .home-button img:hover {
-        transform: scale(1.1); /* Aumenta o tamanho da imagem ao passar o mouse */
-      }
+        .home-button img:hover {
+            transform: scale(1.1); /* Aumenta o tamanho da imagem ao passar o mouse */
+        }
+
+        /* Estilo para o ícone de verificação azul */
+        .verified-icon {
+            color: #1DA1F2; /* Azul para o ícone verificado */
+        }
+
+        /* Estilo para o cargo do usuário */
+        #userRole {
+            font-size: 16px;
+            color: #1DA1F2; /* Cor cinza claro */
+            text-align: center; /* Centraliza o texto */
+            margin-top: 5px; /* Espaço acima do texto */
+        }
+
+        /* Estilo para a seção de insígnias */
+        .badges {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px; /* Espaço acima das insígnias */
+        }
+
+        .badge {
+            background-color: rgba(255, 255, 255, 0.2); /* Fundo transparente */
+            border: 1px solid rgba(255, 255, 255, 0.5); /* Borda suave */
+            border-radius: 5px; /* Bordas arredondadas */
+            padding: 8px 15px; /* Espaçamento interno */
+            margin: 0 5px; /* Espaçamento entre insígnias */
+            display: flex; /* Flexbox para alinhar ícone e texto */
+            align-items: center; /* Alinha verticalmente */
+            font-size: 14px; /* Tamanho da fonte */
+            color: white; /* Cor do texto */
+            backdrop-filter: blur(5px); /* Desfoque do fundo */
+            transition: background-color 0.3s; /* Transição suave */
+        }
+
+        .badge:hover {
+            background-color: rgba(255, 255, 255, 0.3); /* Mudança de fundo ao passar o mouse */
+        }
+
+        .badge i {
+            margin-right: 5px; /* Espaço entre ícone e texto */
+            color: #1DA1F2; /* Cor do ícone */
+        }
+
+        body {
+            color: white; /* Cor do texto */
+            background-color: #000; /* Cor de fundo da página */
+        }
     </style>
-  </head> 
+</head> 
 
-  <body>
+<body>
     <!-- Animação de fundo de pixel paralaxe -->
     <section class="animated-background">
-      <div id="stars1"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
+        <div id="stars1"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
     </section>
     <!-- Fim da animação de fundo de pixel paralaxe -->
 
     <a id="profilePicture" href="#popup">
-      <img src="https://imgur.com/IDFCDzw.png" alt="Profile Picture">
+        <img src="https://imgur.com/IDFCDzw.png" alt="Profile Picture">
     </a>
 
     <div class="overlay" id="popup">
-      <div class="popup">
-        <div class="popup-photo">
-          <a href="https://imgur.com/IDFCDzw.png" target="_blank">
-            <img src="https://imgur.com/IDFCDzw.png" alt="Profile Picture">
-          </a>
+        <div class="popup">
+            <div class="popup-photo">
+                <a href="https://imgur.com/IDFCDzw.png" target="_blank">
+                    <img src="https://imgur.com/IDFCDzw.png" alt="Profile Picture">
+                </a>
+            </div>
+            <div class="popup-quote">
+                completamente da minha mulher!
+            </div>
+            <a class="popup-close" onclick="history.back()">&times;</a>
         </div>
-        <div class="popup-quote">
-         Desenvolvedor
-        </div>
-        <a class="popup-close" onclick="history.back()">&times;</a>
-      </div>
     </div>
 
     <div id="userName">
-      @hym <i class="fas fa-check-circle"></i>
+        @hym <i class="fas fa-check-circle verified-icon"></i>
+    </div>
+
+    <!-- Adicionando o cargo do usuário -->
+    <div id="userRole">
+        22/08
     </div>
     
     <!-- Adicionando uma frase abaixo do @heymts -->
     <div id="userQuote">
-  Desenvolvedor
+        completamente da minha mulher!
+    </div>
+
+    <!-- Adicionando a seção de insígnias -->
+    <div class="badges">
+        <div class="badge"><i class="fas fa-user-shield"></i> Moderador</div>
+        <div class="badge"><i class="fas fa-code"></i> Desenvolvedor</div>
+        <div class="badge"><i class="fas fa-star"></i> CEO</div>
     </div>
 
     <div id="links">
-      <a class="link" href="https://www.tiktok.com/@hymbio7" target="_blank">
-     <i class="fab fa-tiktok">&nbsp;</i>Tiktok
-      </a>
-      <a class="link" href="https://discord.gg/BZqWDSaSCv" target="_blank">
-        <i class="fab fa-discord">&nbsp;</i>Discord
-      </a>
-      <a class="link" href="https://www.youtube.com/@hymbio" target="_blank">
-        <i class="fab fa-youtube">&nbsp;</i>Youtube
-      </a>
+        <a class="link" href="https://www.tiktok.com/@hymbio7" target="_blank">
+            <i class="fab fa-tiktok">&nbsp;</i>Tiktok
+        </a>
+        <a class="link" href="https://discord.gg/BZqWDSaSCv" target="_blank">
+            <i class="fab fa-discord">&nbsp;</i>Discord
+        </a>
+        <a class="link" href="https://www.youtube.com/@hymbio" target="_blank">
+            <i class="fab fa-youtube">&nbsp;</i>Youtube
+        </a>
     </div>
 
     <!-- Adicionando o botão de link com a imagem da casinha -->
     <a class="home-button" href="https://hymbio.xyz/" target="_blank">
-      <img src="https://imgur.com/vN52gES.png" alt="Home">
+        <img src="https://imgur.com/vN52gES.png" alt="Home">
     </a>
 
     <div id="hashtag">
-      Powered by: @hymbio
+        Powered by: @hymbio
     </div>
-  </body>
+</body>
 </html>
+
+
+
